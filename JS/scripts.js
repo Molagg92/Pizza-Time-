@@ -2,35 +2,21 @@
 //--------------------------------------
 
 //Global Variables---------------------
-
 const veggiesArray = ["mushrooms", "olives", "pineapple", "peppers"]
 const meatArray = ["pepperoni", "sausage", "chicken", "anchovies" ]
 const crustArray = ["golden", "stuffed", "gluten-free", "thin"]
 const sizesArray = ["small", "medium", "large", "xl"]
-
-
-
-
-
-
-
-
-
+let classicAmerican = new Pizza ("medium", "golden", "pepperoni", "mushrooms");
+let hawaiianChicken = new Pizza ("medium", "stuffed", "chicken", "pineapple");
 
 // //Pizza constructor logic------------------
-
 function  Pizza ( size, crust, meat, topping ) {
   this.size = size;
   this.crust = crust;
   this.meat = meat;
   this.topping = topping;  
-  return 'Order UP!' ;
   };
-
-let classicAmerican = new Pizza ("medium", "golden", "pepperoni", "mushrooms");
-
 //Price Tracker-------------------------------
-
 Pizza.prototype.priceTracker= function() {
   const sizePrices ={
   "small": 5.00,
@@ -58,8 +44,6 @@ Pizza.prototype.priceTracker= function() {
   }
   return sizePrices[this.size] + crustPrices[this.crust] + meatPrices[this.meat] + toppingPrices[this.topping]
 }
-
-
 
 
 //>User Interface Logic< --------------------
