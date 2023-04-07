@@ -28,14 +28,10 @@ function  Pizza ( size, crust, meat, topping ) {
   };
 
 let classicAmerican = new Pizza ("medium", "golden", "pepperoni", "mushrooms");
-Pizza.prototype.chooseSize = function()
- {
-console.log("Test")
-}
 
 //Price Tracker-------------------------------
 
-function priceTracker(order) {
+Pizza.prototype.priceTracker= function() {
   const sizePrices ={
   "small": 5.00,
   "medium": 10,
@@ -60,7 +56,7 @@ function priceTracker(order) {
     "pineapple": 2,
     "peppers": 2,
   }
-  return sizePrices[order.size] + crustPrices[order.crust] + meatPrices[order.meat] + toppingPrices[order.topping]
+  return sizePrices[this.size] + crustPrices[this.crust] + meatPrices[this.meat] + toppingPrices[this.topping]
 }
 
 
