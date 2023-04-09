@@ -2,12 +2,22 @@
 //--------------------------------------
 
 //Global Variables---------------------
-const veggiesArray = ["mushrooms", "olives", "pineapple", "peppers"]
-const meatArray = ["pepperoni", "sausage", "chicken", "anchovies" ]
-const crustArray = ["golden", "stuffed", "gluten-free", "thin"]
-const sizesArray = ["small", "medium", "large", "xl"]
+
+window.addEventListener("load", function(){
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function(e) { userPizzaMaker(e);});
+})
+
+
+const sizeInput = document.querySelectorAll('input[name="size"]:checked').value;
+
+
 let classicAmerican = new Pizza ("medium", "golden", "pepperoni", "mushrooms");
 let hawaiianChicken = new Pizza ("medium", "stuffed", "chicken", "pineapple");
+
+
+
+
 
 // //Pizza constructor logic------------------
 function  Pizza ( size, crust, meat, topping ) {
@@ -48,3 +58,10 @@ Pizza.prototype.priceTracker= function() {
 
 //>User Interface Logic< --------------------
 //-------------------------------------------
+
+
+
+function userPizzaMaker(e) {
+  e.preventDefault();
+
+}

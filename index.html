@@ -12,39 +12,43 @@
 
 
   <dive id="sizeQuestion">
-    <h3>Bread Options:</h3>
-    <button id="small">Small</button>
-    <button id="medium">Medium</button>
-    <button id="large">Large</button>
-    <button id="xl">Xl</button>
+    <h3>Size Options:</h3>
+    <input type="radio" name="size" id="small" value="small" checked>
+    <label for="small">Small</label>
+    <input type="radio" name="size" id="medium" value="medium">
+    <label for="medium">Medium</label>
+    <input type="radio" name="size" id="large" value="large">
+    <label for="large">Large</label>
+    <input type="radio" name="size" id="xl" value="xl">
+    <label for="xl">XL</label>
 
   </dive>
 
   <div id="crustQuest">
     <h3>Crust Options:</h3>
-    <button id="golden">Golden Butter</button>
-    <button id="stuffed">Stuffed Crust</button>
-    <button id="gluten-free">Gluten Free Option</button>
-    <button id="thin">Thin Crust</button>
+    <input type="radio" name="crust" id="golden" value="golden">Golden Butter</input>
+    <input type="radio" name="crust" id="stuffed" value="stuffed">Stuffed Crust</input>
+    <input type="radio" name="crust" id="gluten-free" value="gluten-free">Gluten Free Option</input>
+    <input type="radio" name="crust" id="thin" value="thin">Thin Crust</input>
   </div>
 
   <div id="meatQuest">
     <h3>Meat Menu:</h3>
-      <button id="pepperoni">Pepperoni</button>
-      <button id="sausage">Sausage</button>
-      <button id="chicken">Chicken</button>
-      <button id="anchovies">Anchovies</button>
+      <input type="radio" name="meat" id="pepperoni" value="pepperoni">Pepperoni</input>
+      <input type="radio" name="meat" id="sausage" value="sausage">Sausage</input>
+      <input type="radio" name="meat" id="chicken" value="chicken">Chicken</input>
+      <input type="radio" name="meat" id="anchovies" value="anchovies">Anchovies</input>
   </div>
 
   <div id="toppingsQuest">
     <h3>Toppings:</h3>
-    <button id="mushrooms">Mushrooms</button>
-    <button id="olives">Olives</button>
-    <button id="pineapple">Pineapple</button>
-    <button id="peppers">Peppers</button>
+    <input type="radio" name="toppings" id="mushrooms" value="mushrooms">Mushrooms</input>
+    <input type="radio" name="toppings" id="olives" value="olives">Olives</input>
+    <input type="radio" name="toppings" id="pineapple" value="pineapple">Pineapple</input>
+    <input type="radio" name="toppings" id="peppers" value="peppers">Peppers</input>
   </div>
 
-
+<button type="submit"> Place your Pizza Order! </button>
 
 </form>
 </body>
