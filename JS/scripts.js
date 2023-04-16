@@ -77,7 +77,7 @@ function userPizzaMaker(e) {
   const pizzaOrder = new Pizza (sizeInput, crustInput, meatInput, toppingsInput);
  
   let resultWindow = document.getElementById("resultWindow");
-  resultWindow.innerHTML = "<h3>Order placed!</h3>"+ " $" + pizzaOrder.priceTracker() + " total";
+  resultWindow.innerHTML = "<h3>Order placed!</h3>" + "<h4> Thank you for your Visit, A dedicated crew member will ensure rapid delivery!</h4>" + " $" + pizzaOrder.priceTracker() + " total";
   document.getElementById('resDiv').removeAttribute('class', 'hidden');
 
 //  return(pizzaOrder.priceTracker());
