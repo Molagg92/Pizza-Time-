@@ -9,8 +9,6 @@ window.addEventListener("load", function(){
 })
 
 
-const sizeInput = document.querySelectorAll('input[name="size"]:checked').value;
-
 
 let classicAmerican = new Pizza ("medium", "golden", "pepperoni", "mushrooms");
 let hawaiianChicken = new Pizza ("medium", "stuffed", "chicken", "pineapple");
@@ -18,15 +16,20 @@ let hawaiianChicken = new Pizza ("medium", "stuffed", "chicken", "pineapple");
 
 
 
-
 // //Pizza constructor logic------------------
+
 function  Pizza ( size, crust, meat, topping ) {
   this.size = size;
   this.crust = crust;
   this.meat = meat;
   this.topping = topping;  
   };
+
+
+
+
 //Price Tracker-------------------------------
+
 Pizza.prototype.priceTracker= function() {
   const sizePrices ={
   "small": 5.00,
@@ -42,9 +45,9 @@ Pizza.prototype.priceTracker= function() {
   }
   const meatPrices ={
     "pepperoni": 2,
-    "sausage": 2,
+    "sausage": 4,
     "chicken": 2,
-    "anchovies": 2,
+    "anchovies": 4,
   }
   const toppingPrices = {
     "mushrooms": 2,
@@ -64,4 +67,17 @@ Pizza.prototype.priceTracker= function() {
 function userPizzaMaker(e) {
   e.preventDefault();
 
+  const sizeInput = document.querySelector('input[name="size"]:checked').value;
+  const crustInput = document.querySelector('input[name="crust"]:checked').value;
+  const meatInput = document.querySelector('input[name="meat"]:checked').value;
+  const toppingsInput = document.querySelector('input[name="toppings"]:checked').value;
+ 
+
+
+  const pizzaOrder = new Pizza (sizeInput, crustInput, meatInput, toppingsInput);
+ 
+  let resultWindow = document.getElementById("resultWindow");
+  resultWindow.innerHTML = "$" + pizzaOrder.priceTracker();
+
+//  return(pizzaOrder.priceTracker());
 }

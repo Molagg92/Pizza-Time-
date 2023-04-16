@@ -26,7 +26,7 @@
 
   <div id="crustQuest">
     <h3>Crust Options:</h3>
-    <input type="radio" name="crust" id="golden" value="golden">Golden Butter</input>
+    <input type="radio" name="crust" id="golden" value="golden" checked>Golden Butter</input>
     <input type="radio" name="crust" id="stuffed" value="stuffed">Stuffed Crust</input>
     <input type="radio" name="crust" id="gluten-free" value="gluten-free">Gluten Free Option</input>
     <input type="radio" name="crust" id="thin" value="thin">Thin Crust</input>
@@ -34,7 +34,7 @@
 
   <div id="meatQuest">
     <h3>Meat Menu:</h3>
-      <input type="radio" name="meat" id="pepperoni" value="pepperoni">Pepperoni</input>
+      <input type="radio" name="meat" id="pepperoni" value="pepperoni" checked>Pepperoni</input>
       <input type="radio" name="meat" id="sausage" value="sausage">Sausage</input>
       <input type="radio" name="meat" id="chicken" value="chicken">Chicken</input>
       <input type="radio" name="meat" id="anchovies" value="anchovies">Anchovies</input>
@@ -42,14 +42,19 @@
 
   <div id="toppingsQuest">
     <h3>Toppings:</h3>
-    <input type="radio" name="toppings" id="mushrooms" value="mushrooms">Mushrooms</input>
+    <input type="radio" name="toppings" id="mushrooms" value="mushrooms" checked>Mushrooms</input>
     <input type="radio" name="toppings" id="olives" value="olives">Olives</input>
     <input type="radio" name="toppings" id="pineapple" value="pineapple">Pineapple</input>
     <input type="radio" name="toppings" id="peppers" value="peppers">Peppers</input>
   </div>
-
+<br>
 <button type="submit"> Place your Pizza Order! </button>
 
 </form>
+
+<div>
+  <h3 id="resultWindow"></h3>
+</div>
+
 </body>
 </html>
