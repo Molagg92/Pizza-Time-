@@ -1,4 +1,4 @@
-# _{Erik's Pizza Time All the Time Parlor}_
+# _{Erik's Pizza Time All the Time Pizza Parlor}_
 
 #### By _**{Erik Z., Molagg92}**_
 
